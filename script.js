@@ -174,14 +174,7 @@ function showStep(step) {
             });
             break;
         case 5:
-            // Animate polaroids
-            gsap.from(".polaroid", {
-                y: 100,
-                opacity: 100,
-                stagger: 0.2,
-                duration: 1,
-                ease: "back.out(1.7)"
-            });
+            // Show polaroids without animation
             break;
         case 6:
             // Create fireworks
