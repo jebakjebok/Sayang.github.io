@@ -348,40 +348,45 @@ p {
 
 
 .polaroid {
-    background: white;
-    padding: 15px 15px 60px 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transform: rotate(-5deg);
-    transition: all 0.5s;
-    margin: 30px 0;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    margin: 0;
     max-width: 250px;
 }
 
 .polaroid:hover {
-    transform: rotate(0deg) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transform: none;
+    box-shadow: none;
 }
 
 .polaroid img {
-    width: 140px;
-    height: 150px;
-    border: 1px solid #eee;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
 }
 
 .polaroid-caption {
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #d81b60;
     margin-top: 10px;
 }
 
 .memory-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 60px;
     margin: 30px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .countdown {
